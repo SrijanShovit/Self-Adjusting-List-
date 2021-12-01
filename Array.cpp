@@ -5,7 +5,7 @@ const int limit = 10e5+10;
 int arr[limit];
 
 
-bool Find(int n,int num){
+bool FindMethod(int n,int num){
     int i,index=0;
     for (i=0;i<n;i++){
         //traversing through the array to find the searched element
@@ -43,7 +43,7 @@ int main()
     cout << "Enter element to be searched" << endl;
     int find;
     cin >> find;
-    bool found = Find(n,find);
+    bool found = FindMethod(n,find);
     if  (found) {
 
         cout << find << " is present in the list"<< endl;

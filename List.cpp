@@ -44,7 +44,7 @@ void displayList(list *head){                  //O(n)
     } 
 }
 
-list *isPresent(list *head,int find){          
+list *FindMethod(list *head,int find){          
     list *curr = head;
     list *prev = NULL;
 
@@ -95,7 +95,7 @@ int main()
     cout << endl <<  "Enter element to be searched" << endl;
     int find;
     cin >> find;
-    head =isPresent(head,find);
+    head =FindMethod(head,find);
     displayList(head);
 
     return 0;
